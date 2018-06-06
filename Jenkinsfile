@@ -4,11 +4,12 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'qnib/pytest'
+                    image 'python:2'
                 }
             }
             steps {
-            		sh 'pytest --verbose --junit-xml test-reports/results.xml flaskr/test_auth.py'
+            		sh 'pip install '.[test]' '
+            		sh 'pytest'
             }
         }
     }
