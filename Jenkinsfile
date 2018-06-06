@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-            		sh 'pytest --verbose --junit-xml test-reports/results.xml
+            		sh 'pytest --verbose --junit-xml test-reports/results.xml flaskr/test_auth.py'
             }
         }
     }
