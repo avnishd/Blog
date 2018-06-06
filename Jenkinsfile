@@ -19,7 +19,7 @@ pipeline {
             }
             steps {
             		sh 'pip install -r ./requirements.txt'
-					sh 'py.test --verbose --junit-xml test-reports/results.xml flaskr/test_auth.py'
+            		sh 'py.test --verbose --junit-xml test-reports/results.xml flaskr/test_auth.py'
             }
         }
     }
