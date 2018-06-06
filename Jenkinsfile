@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile sources/auth.py'
+                sh 'python -m py_compile flaskr/auth.py'
             }
         }
     }
