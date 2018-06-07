@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-            		sh 'pytest'
+            		sh 'pip install ".[test]"'
             }
         }
     }
