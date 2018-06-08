@@ -5,7 +5,6 @@ pipeline {
             agent {
                 dockerfile {
                     filename 'Dockerfile'
-                    dir 'blog'
                 }
             }
             steps {
