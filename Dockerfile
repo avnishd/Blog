@@ -1,4 +1,4 @@
-from python:2
+FROM python:2
 
 copy ./ /blog/
 copy ./flaskr/ /blog/flaskr/
