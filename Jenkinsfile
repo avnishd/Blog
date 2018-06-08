@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
             agent {
                 dockerfile {
-                    filename Dockerfile
-                    dir /blog/
+                    filename 'Dockerfile'
+                    dir 'blog'
                 }
             }
             steps {
