@@ -8,8 +8,7 @@ pipeline {
                 }
             }
             steps {
-            		sh 'pip install ".[test]"'
-            		sh 'pytest'
+            		sh 'flask init-db'
             }
         }
     }
